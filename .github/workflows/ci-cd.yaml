@@ -63,6 +63,10 @@ jobs:
       - name: Delete Tag
         run: |
           git tag -d "RELEASE_${{ steps.get-version.outputs.TAG_NAME }}"
+        continue-on-error: true
+
+      - name: Delete Tag the commit
+        run: |
           git push -d origin "RELEASE_${{ steps.get-version.outputs.TAG_NAME }}"
         continue-on-error: true
 
