@@ -20,6 +20,9 @@ jobs:
       - name: Change to app directory
         run: cd app
 
+      - name: Check files
+        run: ls -la
+
       - name: Install dependencies
         run: npm install
 
