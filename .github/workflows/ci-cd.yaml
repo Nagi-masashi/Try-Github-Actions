@@ -32,13 +32,6 @@ jobs:
           cd app
           npm test
 
-      - name: Run build
-        run: |
-          cd app
-          npm ci
-          npm run clean
-          npm run build
-
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_test
