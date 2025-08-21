@@ -37,7 +37,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t my-app:${{ github.sha }} ../app -f ./build
+          docker build -t my-app:${{ github.sha }} ./app -f ./build/Dockerfile
 
       - name: Push Docker image to registry (e.g., Docker Hub)
         run: |
