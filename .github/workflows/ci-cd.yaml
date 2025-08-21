@@ -33,6 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build_and_test
     if: success()
+    environment: Try Github Actions
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
