@@ -41,7 +41,7 @@ jobs:
       - name: Get app version and set as output
         id: get-version
         run: |
-          echo "::set-output name=TAG_NAME::$(node -e "console.log(require('./app/package.json').version)")
+          echo "::set-output name=TAG_NAME::$(node -e "console.log(require('./app/package.json').version)")"
 
       - name: Build Docker image
         env:
