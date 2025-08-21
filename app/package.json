@@ -1,0 +1,12 @@
+{
+  "name": "try-github-actions",
+  "version": "1.0.0",
+  "description": "A simple Node.js app for a CI/CD demo with GitHub Actions.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node app.test.js"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
