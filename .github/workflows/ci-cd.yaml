@@ -74,8 +74,3 @@ jobs:
         run: |
           git tag "RELEASE_${{ steps.get-version.outputs.TAG_NAME }}"
           git push origin "RELEASE_${{ steps.get-version.outputs.TAG_NAME }}"
-
-      - name: Deploy to Cloud (e.g., AWS ECS)
-        run: |
-          # AWS CLIを使ってECSにデプロイするコマンドを記述
-          # 例: aws ecs update-service --cluster my-cluster --service my-service --force-new-deployment
