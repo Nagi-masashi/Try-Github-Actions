@@ -1,6 +1,6 @@
 {
   "name": "try-github-actions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Node.js app for a CI/CD demo with GitHub Actions.",
   "main": "app.js",
   "scripts": {
